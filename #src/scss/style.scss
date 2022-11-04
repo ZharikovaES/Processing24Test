@@ -72,7 +72,7 @@ body{
     }
 }
 .btn--blue {
-    padding: min(2vh, 14px) min(1vw, 15px) min(2vh, 16px) min(1vw, 15px);    
+    padding: min(2vh, 16px) min(1vw, 15px) min(2vh, 16px) min(1vw, 15px);    
     line-height: 1.3;
     font-weight: 600;
     font-size: 13px;
@@ -98,7 +98,12 @@ body{
     padding: min(2vh, 14px) min(1vw, 15px) min(2vh, 16px) min(1vw, 15px);
     background-color: white;
     border: 1px solid #D5D5D5;
-    color: $gray2;
+    
+    &, &::placeholder {
+        color: $gray2;
+        font-size: 14px;
+        line-height: 1.2;
+    }
 }
 
 .title{

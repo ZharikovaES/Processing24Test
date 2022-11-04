@@ -1,0 +1,53 @@
+<section class="delivery">
+    <div class="container">
+        <h3 class="delivery__title title"></h3>
+        <form action="" class="delivery__form form-delivery">
+            <div class="form-delivery__inner">
+                <div class="form-delivery__field">
+                    <label for="delivery-fuel-type">Вид топлива</label>
+                    <select name="fuel-type" id="delivery-fuel-type" name="delivery-fuel-type">
+                        <option value="DT" selected>ДТ</option>
+                        <option value="92">АИ-92</option>
+                        <option value="95">АИ-95</option>
+                    </select>
+                </div>
+                <div class="form-delivery__field">
+                    <label for="delivery-fuel-volume">Объем топлива</label>
+                    <input type="range" id="delivery-fuel-volume" name="delivery-fuel-volume" placeholder="1670 литров">
+                </div>
+                <div class="form-delivery__field">
+                    <label for="delivery-place">Место доставки</label>
+                    <input class="input" type="text" id="delivery-place" name="delivery-place" placeholder="Укажите место" required>
+                </div>
+                <div class="form-delivery__field">
+                    <label for="delivery-username">Ваше имя</label>
+                    <input class="input" type="text" id="delivery-username" name="delivery-username" placeholder="Иван" required>
+                </div>
+                <div class="form-delivery__field">
+                    <label for="delivery-phone">Номер телефона</label>
+                    <input class="input" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+            </div>
+            <div class="form-delivery__calculator calculator-delivery">
+                <h4 class="calculator-delivery__title">Итого</h4>
+                <ul class="calculator-delivery__list">
+                    <li class="calculator-delivery__subinfo">
+                        <label class="calculator-delivery__subinfo-label" for="calculator-fuel-cost">Стоимость топлива</label>
+                        <output class="calculator-delivery__subinfo-output rub" id="calculator-fuel-cost">77 350.00</output>
+                    </li>
+                    <li class="calculator-delivery__subinfo">
+                        <label class="calculator-delivery__subinfo-label" for="calculator-fuel-cost">Цена за литр:</label>
+                        <p class="calculator-delivery__subinfo-desc">Цена и стоимость указаны ориентировочно. Точные цену и стоимость собщит наш менеджер при подтверждении заявки.</p>
+                        <output class="calculator-delivery__subinfo-output rub" id="calculator-fuel-cost">45.50</output>
+                    </li>
+                    <li class="calculator-delivery__subinfo">
+                        <label class="calculator-delivery__subinfo-label" for="calculator-fuel-cost">Выгода:</label>
+                        <p class="calculator-delivery__subinfo-desc">При цене на АЗС  49.59 ₽  за литр, цены актуальны на  23.11.2020 г. </p>
+                        <output class="calculator-delivery__subinfo-output rub" id="calculator-fuel-cost">6 953.00</output>
+                    </li>
+                </ul>
+                <button class="calculator-delivery__btn btn--blue">Заказать топливо</button>
+            </div>
+        </form>
+    </div>
+</section>

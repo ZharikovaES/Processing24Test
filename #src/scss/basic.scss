@@ -54,39 +54,40 @@ address {
         height: 0;
         margin: 0;
 
-        & + span::before{
+        & + div::before{
             content: '';
             display: block;
             position: absolute;
             left: 0;
             top: 0;
-            width: 15px;
-            height: 15px;
+            width: 24px;
+            height: 24px;
             flex-shrink: 0;
             flex-grow: 0;
-            border: 2px solid #dadada;
+            border: 2px solid $gray1;
+            background-color: #F9F9F9;
         }
-        &:checked + span{
-            &::before{
-                border: 2px solid #009aaf;
-            
-            }
+        &:checked + div{
             &::after{
                 content: '';
                 display: block;
                 position: absolute;
-                left: 3px;
-                top: 3px;
-                background-color: #53b5de;
-                width: 9px;
-                height: 9px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url("../images/icons.svg#check");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 12px;
+                height: 12px;
             }
         }
     }
-    span{
+    div{
         display: block;
         position: relative;
-        padding-left: 2em;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -118,9 +119,10 @@ address {
             
             &:hover{
             }
-
         }
     }
 }
 
-
+.rub::after{
+    content: " ₽";
+}
