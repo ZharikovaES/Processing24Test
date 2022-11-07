@@ -40,6 +40,11 @@ img{
 address {
     font-style: normal;
 }
+table, thead, tbody, th, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+}
 
 .checkbox{
     display: flex;

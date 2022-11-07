@@ -1,0 +1,113 @@
+.fuel-cost {
+    padding: min(9vh, 91px) 0 min(5vh, 50px);
+
+    &__title {
+        margin-bottom: min(5vh, 48px);
+    }
+    &__table {
+        display: block;
+        overflow: auto;
+        table-layout: fixed;
+        width: 100%;
+
+        &>thead, &>tbody {
+            width: 100%;
+        }
+
+        &>thead{
+            background-color: $blue2;
+            color: white;
+            @include adaptiv-font(13, 11, 1);
+            line-height: 1.2;
+            font-weight: 600;
+            
+            &>tr{
+                th {
+                    padding: min(2vh, 19px) min(1vw, 10px) min(2vh, 21px) $gridGap;
+                    &:first-child{
+                        width: 18%;
+                    }
+                    &:nth-child(2) {
+                        width: 25%;
+                    }
+                    &:nth-child(3) {
+                        width: 25%;
+                    }
+                    &:nth-child(4) {
+                        width: 16%;
+                    }
+                    &:nth-child(5) {
+                        width: 16%;
+                    }
+                }
+            }
+        }
+        &>tbody {
+            &>tr {
+                border-right: 1px solid $white2;
+            }
+            &>tr>th{
+                background-color: $blue1;
+                text-align: left;
+                vertical-align: top;
+                color: white;
+                font-weight: 700;
+                @include adaptiv-font(24, 20, 1);
+                line-height: 1.2;
+                padding: min(1.5vh, 16px) min(2vw, 20px);
+            }
+            &>tr>td{
+                border-top: 1px solid $white2;
+                border-bottom: 1px solid $white2;
+            }
+        }
+        .row-space{
+            height: 20px;
+            border-right: none;
+        }
+    }
+}
+.environmental-class {
+    width: 100%;
+    table-layout: fixed;
+
+    @include adaptiv-font(13, 11, 1);
+    line-height: 1.2;
+    font-weight: 600;
+
+    &>tbody>tr>th{
+        width: 30%;
+        padding: min(1.5vh, 16px) min(2vw, 20px);
+        text-align: left;
+        vertical-align: top;
+    }
+    &>tbody>tr>td{
+        width: 70%;
+    }
+    &__row{
+        &>td{
+            border-left: 1px solid $white2;
+        }
+    }
+    &__row + &__row{
+        border-top: 1px solid $white2;
+    }
+}
+.fuel-specifications {
+    width: 100%;
+    table-layout: fixed;
+    &>tbody>tr>td{
+        width: 28%;
+        &:first-child {
+            width: 44%;
+        }
+    }
+    &__row{
+        td{
+            padding: min(1.5vh, 16px) min(2vw, 20px);
+        }
+    }
+    &__row + &__row{
+        border-top: 1px solid $white2;
+    }
+}

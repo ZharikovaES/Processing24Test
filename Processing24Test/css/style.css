@@ -100,6 +100,17 @@ address {
   font-style: normal;
 }
 
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+}
+
 .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,7 +580,7 @@ body {
 }
 
 .fuel-delivery {
-  padding: min(9vh, 91px) 0 min(5vh, 50px);
+  padding: min(5vh, 50px) 0 min(10vh, 100px);
 }
 
 .fuel-delivery__title {
@@ -638,6 +649,131 @@ body {
   margin-left: 16px;
 }
 
+.fuel-cost {
+  padding: min(9vh, 91px) 0 min(5vh, 50px);
+}
+
+.fuel-cost__title {
+  margin-bottom: min(5vh, 48px);
+}
+
+.fuel-cost__table {
+  display: block;
+  overflow: auto;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.fuel-cost__table > thead,
+.fuel-cost__table > tbody {
+  width: 100%;
+}
+
+.fuel-cost__table > thead {
+  background-color: #043C77;
+  color: white;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.fuel-cost__table > thead > tr th {
+  padding: min(2vh, 19px) min(1vw, 10px) min(2vh, 21px) min(3vw, 30px);
+}
+
+.fuel-cost__table > thead > tr th:first-child {
+  width: 18%;
+}
+
+.fuel-cost__table > thead > tr th:nth-child(2) {
+  width: 25%;
+}
+
+.fuel-cost__table > thead > tr th:nth-child(3) {
+  width: 25%;
+}
+
+.fuel-cost__table > thead > tr th:nth-child(4) {
+  width: 16%;
+}
+
+.fuel-cost__table > thead > tr th:nth-child(5) {
+  width: 16%;
+}
+
+.fuel-cost__table > tbody > tr {
+  border-right: 1px solid #E7E7E7;
+}
+
+.fuel-cost__table > tbody > tr > th {
+  background-color: #098FCF;
+  text-align: left;
+  vertical-align: top;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: min(1.5vh, 16px) min(2vw, 20px);
+}
+
+.fuel-cost__table > tbody > tr > td {
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.fuel-cost__table .row-space {
+  height: 20px;
+  border-right: none;
+}
+
+.environmental-class {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.environmental-class > tbody > tr > th {
+  width: 30%;
+  padding: min(1.5vh, 16px) min(2vw, 20px);
+  text-align: left;
+  vertical-align: top;
+}
+
+.environmental-class > tbody > tr > td {
+  width: 70%;
+}
+
+.environmental-class__row > td {
+  border-left: 1px solid #E7E7E7;
+}
+
+.environmental-class__row + .environmental-class__row {
+  border-top: 1px solid #E7E7E7;
+}
+
+.fuel-specifications {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.fuel-specifications > tbody > tr > td {
+  width: 28%;
+}
+
+.fuel-specifications > tbody > tr > td:first-child {
+  width: 44%;
+}
+
+.fuel-specifications__row td {
+  padding: min(1.5vh, 16px) min(2vw, 20px);
+}
+
+.fuel-specifications__row + .fuel-specifications__row {
+  border-top: 1px solid #E7E7E7;
+}
+
 @media screen and (min-width: 850px) {
   .list-header__select:hover .list-header__sublist {
     z-index: 3;
@@ -678,6 +814,18 @@ body {
 
   .fuel-delivery__title {
     font-size: calc(28px + 20 * ((100vw - 320px) / 830));
+  }
+
+  .fuel-cost__table > thead {
+    font-size: calc(11px + 2 * ((100vw - 320px) / 830));
+  }
+
+  .fuel-cost__table > tbody > tr > th {
+    font-size: calc(20px + 4 * ((100vw - 320px) / 830));
+  }
+
+  .environmental-class {
+    font-size: calc(11px + 2 * ((100vw - 320px) / 830));
   }
 }
 
