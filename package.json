@@ -36,6 +36,8 @@
   "dependencies": {
     "imagemin": "^8.0.1",
     "imagemin-webp": "^7.0.0",
+    "inputmask": "^5.0.7",
+    "just-validate": "^3.8.1",
     "lightgallery": "^2.7.0",
     "mkdirp": "^1.0.4",
     "swiper": "^8.4.4"

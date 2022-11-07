@@ -275,6 +275,16 @@ gulp.task("fontawesomeJs", function(){
 
 gulp.task("fontawesome-free", gulp.parallel("fontawesomeFonts", "fontawesomeCss", "fontawesomeJs"));
 
+gulp.task("inputmask", function(){
+    return gulp.src(["node_modules/inputmask/dist/inputmask.min.js"])
+    .pipe(gulp.dest(sourceFolder + '/js/lib'));
+    });
+
+gulp.task("justValidate", function(){
+    return gulp.src(["node_modules/just-validate/dist/just-validate.production.min.js"])
+    .pipe(gulp.dest(sourceFolder + '/js/lib'));
+    });
+    
 
 function fontsStyle(){
     let file_content = fs.readFileSync(sourceFolder + '/scss/fonts.scss');

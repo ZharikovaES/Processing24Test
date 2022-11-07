@@ -26,7 +26,6 @@
         &.logo {
             @media screen and (max-width: $width1) {
                 max-width: min(50vw, 220px);
-
             }
         }
         @media screen and (max-width: $width1) {
@@ -230,7 +229,6 @@
         visibility: hidden;
         top: 100%;
         left: 0;
-        
 
         @media screen and (max-width: $width1) {
             visibility: visible;
@@ -241,7 +239,6 @@
             max-height: 0;
             overflow: hidden;
         }
-        
 
         &:hover {
             @media screen and (min-width: $width1) {

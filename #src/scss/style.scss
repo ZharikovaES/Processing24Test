@@ -9,8 +9,8 @@ $gridGap: min(3vw, 30px);
 
 /* Breakpoints*/
 $width1: 850px;
-// $width2: 850px;
-// $width3: 850px;
+$width2: 700px;
+$width3: 600px;
 
 
 /*Colors*/
@@ -86,7 +86,7 @@ body{
     }
 }
 .btn--blue {
-    padding: min(2vh, 16px) min(1vw, 15px) min(2vh, 16px) min(1vw, 15px);    
+    padding: min(2vh, 14px) min(1vw, 15px) min(2vh, 16px) min(1vw, 15px);    
     line-height: 1.3;
     font-weight: 500;
     font-size: 13px;
@@ -143,5 +143,6 @@ body{
 
 
 @import "header";
+@import "fuel-delivery";
 @import "footer";
 

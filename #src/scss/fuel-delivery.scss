@@ -1,0 +1,73 @@
+.fuel-delivery {
+    padding: min(9vh, 91px) 0 min(5vh, 50px);
+    &__title {
+        font-weight: 700;
+        @include adaptiv-font(48, 28, 1);
+        line-height: 1.23;
+        margin-bottom: min(5vh, 48px);
+    }
+    &__form {}
+}
+.form-delivery {
+    box-shadow: $boxShadow;
+    padding: min(5vh, 49px) min(5vw, 96px) min(4vh, 43px);
+    
+    &__title {
+        margin-bottom: min(3vh, 30px);
+    }
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 14px;
+
+        @media screen and (max-width: $width2) {
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        max-width: 273px;
+        width: 100%;
+
+        &:last-child {
+            max-width: 258px;
+
+            @media screen and (max-width: $width2) {
+                max-width: 100%;
+            }    
+        }
+
+        @media screen and (max-width: $width2) {
+            max-width: 100%;
+        }
+    }
+    &__item-label {
+        font-size: 12px;
+        line-height: 1.25;
+        font-weight: 500;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+    &__item-input {
+        width: 100%;
+        min-height: 46px;
+    }
+    &__item-btn {
+        width: 100%;
+        min-height: 46px;
+        white-space: nowrap;
+    }
+    &__conditions {
+        margin-top: min(3vh, 30px);
+    }
+}
+.conditions-delivery {
+    &__checkbox {}
+    &__checkbox-text {
+        width: fit-content;
+        margin-left: 16px;
+
+        @media screen and (max-width: $width3) {
+            margin-left: 12px;
+        }    
+    }
+}
